@@ -1,0 +1,29 @@
+﻿@page "/"
+@using PompProperties.WebUI2.Components.Layout
+@using Syncfusion.Blazor.Buttons
+@using Syncfusion.Blazor.Inputs
+@using System.ComponentModel.DataAnnotations
+@rendermode InteractiveAuto
+
+<PageTitle>Home</PageTitle>
+
+<h1>Pomp Properties</h1>
+
+@if (properties == null)
+{
+    <div class="spinner"></div>
+}
+else
+{
+    <EditForm Model="@properties" OnValidSubmit="@OnValidSubmit" OnInvalidSubmit="@OnInvalidSubmit">
+        <DataAnnotationsValidator />
+        <div class="form-group">
+            <SfTextBox @bind-Value="@properties.UreTussenin" Placeholder="Ure Tussenin" FloatLabelType='@FloatLabelType.Auto'></SfTextBox>
+            <SfTextBox @bind-Value="@properties.SekondesAan" Placeholder="Sekondes Aan" FloatLabelType='@FloatLabelType.Auto'></SfTextBox>
+            <SfCheckBox Label="Reset" @bind-Checked="@properties.Reset"></SfCheckBox>
+        </div>
+        <div class="submit-btn">
+            <SfButton type="submit" IsPrimary="true">Save</SfButton>
+        </div>
+    </EditForm>
+}
