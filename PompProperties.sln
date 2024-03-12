@@ -13,8 +13,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PompProperties.Application"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PompProperties.Infrastructure", "PompProperties.Infrastructure\PompProperties.Infrastructure.csproj", "{C26BCE9C-9F7D-4860-83D2-3E9A40264082}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PompProperties.WebUI2", "PompProperties.WebUI2\PompProperties.WebUI2.csproj", "{AA21FAFA-007C-45FF-8F05-1F1B6F274B91}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,10 +35,6 @@ Global
 		{C26BCE9C-9F7D-4860-83D2-3E9A40264082}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C26BCE9C-9F7D-4860-83D2-3E9A40264082}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C26BCE9C-9F7D-4860-83D2-3E9A40264082}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AA21FAFA-007C-45FF-8F05-1F1B6F274B91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AA21FAFA-007C-45FF-8F05-1F1B6F274B91}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AA21FAFA-007C-45FF-8F05-1F1B6F274B91}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AA21FAFA-007C-45FF-8F05-1F1B6F274B91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,7 +44,6 @@ Global
 		{98E6855B-2823-4D68-B9BD-022D146DB30F} = {EA5C0D24-2761-4C50-9DEB-0467880012FD}
 		{B6BB6BF8-354B-4C61-BD0A-C94E2A6EA1F1} = {EA5C0D24-2761-4C50-9DEB-0467880012FD}
 		{C26BCE9C-9F7D-4860-83D2-3E9A40264082} = {EA5C0D24-2761-4C50-9DEB-0467880012FD}
-		{AA21FAFA-007C-45FF-8F05-1F1B6F274B91} = {EA5C0D24-2761-4C50-9DEB-0467880012FD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {57A2BEFB-000A-42AD-97FA-35826257B622}
