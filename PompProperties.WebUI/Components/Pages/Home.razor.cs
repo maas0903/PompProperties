@@ -5,8 +5,7 @@ namespace PompProperties.WebUI.Components.Pages
 {
     public partial class Home
     {
-        private string dataResourceText;
-        private Properties properties = new();
+        private Properties? properties = new();
 
         protected override void OnInitialized()
         {
@@ -16,6 +15,7 @@ namespace PompProperties.WebUI.Components.Pages
 
         public void OnValidSubmit()
         {
+            properties ??= new();
             properties.ValuesChanged = true;
             _ = SaveProperties.Save(properties);
             StateHasChanged();

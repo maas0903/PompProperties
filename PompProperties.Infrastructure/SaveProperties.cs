@@ -1,16 +1,11 @@
 ﻿using PompProperties.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
 
 namespace PompProperties.Infrastructure
 {
     public class SaveProperties
     {
-        public static async Task Save(Properties properties)
+        public static async Task Save(Properties? properties)
         {
             string dataResourceText;
             try

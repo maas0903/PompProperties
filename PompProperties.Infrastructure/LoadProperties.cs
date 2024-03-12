@@ -14,7 +14,7 @@ namespace PompProperties.Infrastructure
                 //Console.WriteLine(path);
                 using StreamReader sr = File.OpenText(path);
                 dataResourceText = sr.ReadToEnd();
-                Properties properties = JsonSerializer.Deserialize<Properties>(dataResourceText);
+                Properties? properties = JsonSerializer.Deserialize<Properties>(dataResourceText);
                 return properties;
 
             }

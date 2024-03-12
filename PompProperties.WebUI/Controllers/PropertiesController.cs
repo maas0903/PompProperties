@@ -12,10 +12,16 @@ namespace PompProperties.WebUI.Controllers
         public Properties GetProperties()
         {
             LoadProperties loadProperties = new();
-            Properties properties = loadProperties.Load();
-            Properties propertiesToSave = loadProperties.Load();
+            Properties? properties = loadProperties.Load();
+            Properties? propertiesToSave = loadProperties.Load();
+            if (propertiesToSave == null)
+            {
+                propertiesToSave = new();
+            }
             propertiesToSave.ValuesChanged = false;
-            SaveProperties.Save(propertiesToSave);
+            _ = SaveProperties.Save(propertiesToSave);
+
+            properties ??= new();
             return properties;
         }
     }
