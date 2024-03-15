@@ -11,6 +11,7 @@ namespace PompProperties.Domain.Entities
         [Range(1, int.MaxValue, ErrorMessage = "Sekondes aan moet tussen 1 en baie wees")]
         public string? SekondesAan { get; set; }
         public bool ValuesChanged { get; set; }
+        public bool? StartwitchedOn { get; set; }
         public bool Reset { get; set; }
     }
 }

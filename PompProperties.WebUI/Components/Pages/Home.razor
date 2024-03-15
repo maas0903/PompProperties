@@ -19,6 +19,7 @@ else
         <div class="form-group">
             <SfTextBox @bind-Value="@properties.UreTussenin" Placeholder="Ure Tussenin" FloatLabelType='@FloatLabelType.Auto'></SfTextBox>
             <SfTextBox @bind-Value="@properties.SekondesAan" Placeholder="Sekondes Aan" FloatLabelType='@FloatLabelType.Auto'></SfTextBox>
+            <SfCheckBox Label="Start On" @bind-Checked="@properties.StartwitchedOn"></SfCheckBox>
             <SfCheckBox Label="Reset" @bind-Checked="@properties.Reset"></SfCheckBox>
         </div>
         <div class="submit-btn">
