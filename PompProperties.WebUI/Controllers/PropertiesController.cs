@@ -19,6 +19,7 @@ namespace PompProperties.WebUI.Controllers
                 propertiesToSave = new();
             }
             propertiesToSave.ValuesChanged = false;
+            propertiesToSave.StartwitchedOn = false;
             _ = SaveProperties.Save(propertiesToSave);
 
             properties ??= new();
